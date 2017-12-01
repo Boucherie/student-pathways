@@ -52,15 +52,6 @@ document.addEventListener('DOMContentLoaded', function(){
     pinBox.appendChild(clone);
   });
 
-  var divTravel = document.getElementById('travel-div');
-  var imgTravel = document.getElementById('travel-img');
-  var travelText = document.getElementById('travel-text');
-  divTravel.append(imgTravel);
-  divTravel.append(travelText);
-  divTravel.addEventListener("click", function(){
-    let clone = divTravel.cloneNode(true);
-    pinBox.appendChild(clone);
-  });
   // --------------------------------------------
   var divCancer = document.getElementById('cancer-div');
   var imgCancer = document.getElementById('cancer-img');
@@ -197,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function(){
   var divMoney = document.getElementById('money-div');
   var imgMoney = document.getElementById('money-img');
   var moneyText = document.getElementById('money-text');
-  divMoney.append(imgTravel);
+  divMoney.append(imgMoney);
   divMoney.append(moneyText);
   divMoney.addEventListener("click", function(){
     let clone = divMoney.cloneNode(true);
@@ -236,20 +227,4 @@ document.addEventListener('DOMContentLoaded', function(){
 
 var getJobsButton = document.getElementById("submit-button");
 
-
-
-
-  function listInterests(){
-    for (var i=0; i<interestsList.length; i++) {
-      var interestValue = [];
-      var interestNum = interestsList[i].value;
-      interestValue.push(interestNum);
-    };
-    console.log(interestValue);
-  }
-
-  var interestsList = [];
-  interestsList.push(divBoating, divCooking, divReading, divTravel);
-
-  console.log(interestsList);
 })
