@@ -3,8 +3,13 @@
   height: 600px;
   margin: 0 auto;
   position: relative;
+  background-image: url("https://static.pexels.com/photos/55787/pexels-photo-55787.jpeg");
+  background-size: cover;
 }
 
+p{
+  font-weight: bold;
+}
 .categories {
   width: 250px;
   height: 250px;
@@ -16,7 +21,6 @@
 .search {
   margin: 0 40%;
   font-variant: small-caps;
-
 }
 
 #interests {
@@ -63,7 +67,7 @@
 #problems:hover,
 #values:hover {
   transition: 3s;
-  background-color: red;
+  background-color: teal;
   z-index: 10;
 }
 
@@ -137,19 +141,22 @@ img {
   position: absolute;
   border: 5px solid black;
   text-align: center;
-  left: 20%;
+  left: 30%;
   top: 7%;
+  background-color: #00aaed;
+  opacity: 0.35;
 }
 
 .submit-button {
   position: absolute;
-  left: 37%;
+  left: 40%;
   bottom: 4%;
   border-radius: 20px;
   height: 60px;
   width: 200px;
-  background-color: yellow;
+  background-color: #00aaed;
   font-variant: small-caps;
+  font-weight: 600;
 }
 
 .submit-button h3 {

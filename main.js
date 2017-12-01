@@ -234,6 +234,11 @@ document.addEventListener('DOMContentLoaded', function(){
     pinBox.appendChild(clone);
   });
 
+var getJobsButton = document.getElementById("submit-button");
+
+
+
+
   function listInterests(){
     for (var i=0; i<interestsList.length; i++) {
       var interestValue = [];
